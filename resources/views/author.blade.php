@@ -26,6 +26,11 @@
                 <a href="/blog" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blog</a>
                 <a href="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About us</a>
                 <a href="/contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact us</a>
+                <a href="/login">
+                    <button class="bg-yellow-500 text-white px-6 py-3  font-semibold hover:bg-yellow-600">
+                        Subscribe
+                    </button>
+                </a>
               </div>
             </div>
           </div>
@@ -220,13 +225,6 @@
         </div>
       </footer>
 
-    {{-- <footer class="bg-gray-800 text-white" >
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex h-20 items-center justify-center">
-                    <p>&copy; 2024 Bambang Istijab</p>
-            </div>
-        </div>
-    </footer> --}}
   </div>
 
 

@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Halaman Home</title>
+    <title>Halaman Contact</title>
 </head>
 <body class="h-full">
 
@@ -26,9 +26,11 @@
                 <a href="/blog" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blog</a>
                 <a href="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About us</a>
                 <a href="/contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact us</a>
-                <button class="bg-yellow-500 text-white px-6 py-3  font-semibold hover:bg-yellow-600">
-                    Subscribe
-                </button>
+                <a href="/login">
+                    <button class="bg-yellow-500 text-white px-6 py-3  font-semibold hover:bg-yellow-600">
+                        Subscribe
+                    </button>
+                </a>
               </div>
             </div>
           </div>

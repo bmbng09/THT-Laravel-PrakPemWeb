@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Halaman Category</title>
+    <title>Halaman SignUp</title>
 </head>
 <body class="h-full">
 
@@ -26,11 +26,6 @@
                 <a href="/blog" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blog</a>
                 <a href="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About us</a>
                 <a href="/contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact us</a>
-                <a href="/login">
-                    <button class="bg-yellow-500 text-white px-6 py-3  font-semibold hover:bg-yellow-600">
-                        Subscribe
-                    </button>
-                </a>
               </div>
             </div>
           </div>
@@ -109,118 +104,48 @@
       </div>
     </nav>
 
-    <header class="bg-gray-50 py-16 ">
-        <div class="bg-gray-50 py-16 text-center shadow">
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">Business</h1>
-            <p class="text-gray-500 text-lg mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+    <main class="flex justify-center items-center min-h-screen bg-gray-100">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Create an Account</h2>
+            <p class="text-gray-600 text-center mb-6">Join us and explore our services</p>
+
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                </div>
+
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700 font-medium mb-2">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                </div>
+
+                <div class="mb-4">
+                    <label for="confirm-password" class="block text-gray-700 font-medium mb-2">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                </div>
+
+                <div class="flex items-center mb-6">
+                    <input type="checkbox" id="terms" class="form-checkbox text-yellow-500">
+                    <label for="terms" class="ml-2 text-gray-600 text-sm">
+                        I agree to the <a href="#" class="text-yellow-500 hover:underline">Terms and Conditions</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full bg-yellow-400 text-gray-800 py-2 px-4 rounded-md font-medium hover:bg-yellow-500 transition duration-300">
+                    Sign Up
+                </button>
+            </form>
+
+            <p class="text-center text-gray-600 mt-6">
+                Already have an account?
+                <a href="/login" class="text-yellow-500 font-medium hover:underline">Log In</a>
             </p>
-
-            <nav class="text-gray-600 text-sm uppercase tracking-wider">
-                <span class="text-gray-500">Blog</span> &gt;
-                <span class="text-gray-900 font-semibold">Business</span>
-            </nav>
         </div>
-    </header>
-
-    <main>
-        <!-- Main Content Section -->
-        <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="md:col-span-3 space-y-8">->
-                <div class="flex space-x-4">
-                    <img src="/img/berdua.png" alt="Blog Image" class="w-36 h-36 rounded-md object-cover">
-                    <div>
-                        <p class="text-sm text-purple-700 font-semibold uppercase">Business</p>
-                        <h2 class="text-2xl font-bold text-gray-900 mb-2">Top 6 free website mockup tools 2022</h2>
-                        <p class="text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex space-x-4">
-                    <img src="/img/berdua.png" alt="Blog Image" class="w-36 h-36 rounded-md object-cover">
-                    <div>
-                        <p class="text-sm text-purple-700 font-semibold uppercase">Business</p>
-                        <h2 class="text-2xl font-bold text-gray-900 mb-2">Step-by-step guide to choosing great font pairs</h2>
-                        <p class="text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex space-x-4">
-                    <img src="/img/berdua.png" alt="Blog Image" class="w-36 h-36 rounded-md object-cover">
-                    <div>
-                        <p class="text-sm text-purple-700 font-semibold uppercase">Business</p>
-                        <h2 class="text-2xl font-bold text-gray-900 mb-2">Ten free google fonts that you should use</h2>
-                        <p class="text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex space-x-4">
-                    <img src="/img/berdua.png" alt="Blog Image" class="w-36 h-36 rounded-md object-cover">
-                    <div>
-                        <p class="text-sm text-purple-700 font-semibold uppercase">Business</p>
-                        <h2 class="text-2xl font-bold text-gray-900 mb-2">What did I learn from doing 50+ design sprints?</h2>
-                        <p class="text-gray-600">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="space-y-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Categories</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center bg-yellow-100 px-4 py-3 rounded-md">
-                            <img src="/img/starup.png" alt="Icon" class="mr-3">
-                            <span class="text-gray-900 font-semibold">Startup</span>
-                        </li>
-                        <li class="flex items-center border px-4 py-3 rounded-md">
-                            <img src="/img/bisnis.png" alt="Icon" class="mr-3">
-                            <span class="text-gray-700 font-semibold">Business</span>
-                        </li>
-                        <li class="flex items-center border px-4 py-3 rounded-md">
-                            <img src="/img/ekonomi.png" alt="Icon" class="mr-3">
-                            <span class="text-gray-700 font-semibold">Economy</span>
-                        </li>
-                        <li class="flex items-center border px-4 py-3 rounded-md">
-                            <img src="/img/teknologi.png" alt="Icon" class="mr-3">
-                            <span class="text-gray-700 font-semibold">Technology</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-bold mb-4">All Tags</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 text-sm font-medium text-gray-700 border rounded-md hover:bg-gray-200 cursor-pointer">
-                            Business
-                        </span>
-                        <span class="px-3 py-1 text-sm font-medium text-gray-700 border rounded-md hover:bg-gray-200 cursor-pointer">
-                            Experience
-                        </span>
-                        <span class="px-3 py-1 text-sm font-medium text-gray-700 border rounded-md hover:bg-gray-200 cursor-pointer">
-                            Screen
-                        </span>
-                        <span class="px-3 py-1 text-sm font-medium text-gray-700 border rounded-md hover:bg-gray-200 cursor-pointer">
-                            Technology
-                        </span>
-                        <span class="px-3 py-1 text-sm font-medium text-gray-700 border rounded-md hover:bg-gray-200 cursor-pointer">
-                            Marketing
-                        </span>
-                        <span class="px-3 py-1 text-sm font-medium text-gray-700 border rounded-md hover:bg-gray-200 cursor-pointer">
-                            Life
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </main>
 
 
@@ -234,8 +159,8 @@
               <a href="/about" class="text-sm hover:underline">About us</a>
               <a href="/contact" class="text-sm hover:underline">Contact us</a>
               <a href="/policy" class="text-sm hover:underline">Privacy Policy</a>
-              <a href="/author" class="text-sm hover:underline">Author</a>
-              <a href="/#" class="text-sm hover:underline">Category</a>
+              <a href="author" class="text-sm hover:underline">Author</a>
+              <a href="/kategori" class="text-sm hover:underline">Category</a>
             </nav>
           </div>
           <div class="bg-gray-800 mt-8 p-6 rounded-lg flex flex-col sm:flex-row justify-between items-center">
